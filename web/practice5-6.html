@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotation1 { 
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+        @keyframes rotation2 { 
+            0% {transform: rotate(-90deg);}
+            50% {transform: rotate(90deg);}
+            100% {transform: rotate(-90deg);}
+        }
+
+        #tran1 { margin: 10px;
+                 animation-name: rotation1;
+                 animation-duration: 1s;
+                 animation-iteration-count: infinite;}
+        #tran2 { margin: 10px;
+                 animation-name: rotation2;
+                 animation-duration: 1s;
+                 animation-iteration-count: infinite;}
+    </style>
+</head>
+<body>
+    <h3>어지러워요</h3>
+    <hr>
+    <img id="tran1" src="media/spongebob.png" width="100" height="100" alt="스폰지밥 돌리기"/>
+    <img id="tran2" src="media/spongebob.png" width="100" height="100" alt="스폰지밥 흔들기"/>
+</body>
+</html>
